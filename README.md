@@ -1,113 +1,76 @@
-# Workday Helper - Auto-Fill Extension
+# Workday Helper
 
-## About
-Many respected companies use Workday for their job applications. This tool helps you fill out most parts of the form automatically, allowing you to complete more applications faster.
+A Chrome extension that automatically fills common fields in Workday job applications, helping you apply to more positions faster.
 
-**Important:** This tool fills common questions only (name, address, education, etc.). You'll still need to answer company-specific questions manually.
+## Overview
 
-## What It Does:
-✅ **Auto-fills ALL common Workday fields:**
-- Account creation (Email, Password)
-- Personal Info (Name, Address, Phone)
-- Common Questions (Visa sponsorship, Salary range, Education)
-- Demographics (Race, Gender - if requested)
-- Works automatically when page loads!
+Many companies use Workday for their application systems. This extension automates the repetitive task of filling out common information fields, allowing you to focus on company-specific questions and custom essay responses.
 
-## Installation (2 minutes):
+**Note:** This tool fills standard fields only (personal information, work history, education, etc.). You will still need to manually answer company-specific questions.
 
-1. **Extract the ZIP file** to a folder on your computer
-2. **Open Chrome** and go to: `chrome://extensions/`
-3. **Turn ON "Developer mode"** (top right corner)
-4. **Click "Load unpacked"**
-5. **Select the extracted folder**
-6. Done! You'll see the "WH" icon in Chrome
+## Features
 
-## How to Use:
+### Automatic Form Filling
+- Account creation (email, password)
+- Personal information (name, address, phone)
+- Work experience with dates and descriptions
+- Education details (school, degree, GPA, graduation dates)
+- Skills and certifications
+- Common application questions
+- Demographics (optional fields)
 
-### Auto-Fill (Automatic):
-1. Go to any Workday job application (*.myworkdayjobs.com)
-2. **Extension fills automatically after 1.5 seconds!**
-3. Black notification appears: "Auto-filled X fields"
-4. Review the filled information
-5. Answer company-specific questions manually
-6. Click "Next" to continue to next page
-7. Repeat!
+### Smart Question Recognition
+The extension recognizes and answers common questions:
+- "Are you legally authorized to work in the US?"
+- "Will you require visa sponsorship?"
+- "Are you willing to relocate?"
+- "Have you previously worked for this company?"
+- "What is your desired salary range?"
+- "How did you hear about this position?"
 
-### Manual Fill (if needed):
-1. Click the "WH" extension icon in Chrome toolbar
-2. Click "Fill This Page" button
+### Customizable Settings
+- Edit all information through a user-friendly settings page
+- Save your preferences for future applications
+- Export your configuration as code
 
-### Edit Your Information:
-1. Click the "WH" extension icon
+## Installation
+
+### Step 1: Download the Extension
+1. Go to the [Releases](../../releases) page
+2. Download the latest `workday-helper-vX.X.zip` file
+3. Extract the ZIP file to a permanent location on your computer
+   - On Windows: Right-click → "Extract All"
+   - On Mac: Double-click the ZIP file
+   - **Important:** Keep the extracted folder in a permanent location (don't delete it)
+
+### Step 2: Install in Chrome
+1. Open Google Chrome
+2. Navigate to `chrome://extensions/`
+3. Enable "Developer mode" (toggle in the top-right corner)
+4. Click "Load unpacked"
+5. Select the extracted folder from Step 1
+6. The extension icon (WH) will appear in your Chrome toolbar
+
+### Step 3: Configure Your Information
+1. Click the "WH" icon in Chrome toolbar
 2. Click "Edit Your Information"
-3. Update any fields you want to change
+3. Fill in your personal details
 4. Click "Save Settings"
-5. Your changes will be used for all future applications
 
-## Default Information:
-```
-Email: your.email@example.com
-Password: YourPassword123!
+## Usage
 
-Name: John Doe
-Address: 123 Main Street Apt 1
-City: Your City
-State: Your State
-ZIP: 12345
+### Automatic Mode (Recommended)
+1. Navigate to any Workday application page (`*.myworkdayjobs.com`)
+2. Wait 1.5 seconds - the extension will automatically fill available fields
+3. Review the auto-filled information
+4. Complete any company-specific questions manually
+5. Click "Next" to proceed to the next page
 
-Phone: (555) 123-4567
-Type: Mobile
+### Manual Mode
+1. Click the "WH" extension icon
+2. Click "Fill This Page" button
+3. The extension will fill all recognized fields on the current page
 
-Visa Sponsorship: No
-Authorized to Work: Yes
-Willing to Relocate: Yes
-Salary Range: $40,000 - $60,000
-Education: Bachelor's Degree
-How Did You Hear: LinkedIn
+## Default Configuration
 
-Race: Prefer not to say
-Gender: Prefer not to say
-```
-
-**⚠️ IMPORTANT:** Change these default values in the Settings page before using!
-
-## What Gets Filled:
-- ✅ Email & Password (Create Account)
-- ✅ First Name & Last Name
-- ✅ Full Address (Street, City, State, ZIP)
-- ✅ Phone Number & Type
-- ✅ "Have you worked here before?" → No
-- ✅ "Are you legally authorized to work?" → Yes
-- ✅ "Will you require visa sponsorship?" → No
-- ✅ "Are you willing to relocate?" → Yes
-- ✅ "Salary range?" → Your specified range
-- ✅ "Education level?" → Bachelor's Degree
-- ✅ "How did you hear about us?" → LinkedIn
-- ✅ Work Experience (title, company, dates, description)
-- ✅ Education (school, degree, GPA, years)
-- ✅ Skills (multiple skills)
-- ✅ Demographics (if requested)
-- ✅ Common essay questions
-
-## What Does NOT Get Filled:
-- ❌ Company-specific essay questions
-- ❌ "Why do you want to work at [Company]?"
-- ❌ Custom application questions
-- ❌ Resume/CV uploads
-- ❌ Cover letters
-
-You'll need to answer these manually for each company.
-
-## Customization:
-Click "Edit Your Information" to change any of the default values. You can also click "Export as JavaScript" to see your settings as code.
-
-## Troubleshooting:
-- **Not filling?** Refresh the page after installing
-- **Some fields empty?** Click "Fill This Page" button manually
-- **Dropdowns not working?** Click them manually and select
-- **Check console:** Press F12 → Console tab to see what's happening
-
-## Privacy:
-- All data is stored locally in your browser
-- No data is sent to any server
-- Your information never leaves your computer
+The extension includes placeholder values that you should replace with your own information:
